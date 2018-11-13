@@ -1,4 +1,4 @@
-import React,{PropTypes} from 'react';
+import React,{Component} from 'react';
 import {
     Collapse,
     Navbar,
@@ -6,18 +6,13 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem } from 'reactstrap';
+    NavLink
+     } from 'reactstrap';
 
 const Header = () =>{
     return (
         <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
-       
-     
+        <NavbarBrand href="/">Reactstrap</NavbarBrand>
           <Nav className="ml-auto" navbar>
             <NavItem>
               <NavLink href="/">Home</NavLink>
@@ -28,17 +23,14 @@ const Header = () =>{
             </NavItem>
             {" | "}
             <NavItem>
-              <NavLink href="/course">Course</NavLink>
+              <NavLink href="/courses">Course</NavLink>
             </NavItem>
-          
-         
           </Nav>
-       
       </Navbar>
 
     );
 };
-Header.propTypes ={
-
-};
+// Header.propTypes = {
+// // myProps:PropTypes.func.isRequired,
+// };
 export default Header;

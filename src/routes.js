@@ -24,7 +24,7 @@ import ManageCoursePage from './components/course/ManageCoursePage';
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={HomePage}/>
-    <Route path="course" name="courses" component={CoursesPage}/>
+    <Route path="courses" name="courses" component={CoursesPage}/>
     <Route path="about" name="about" component={AboutPage}/>
     <Route path="course" name="ManageCoursePage" component={ManageCoursePage}/>
     <Route path="course/:id" name="ManageCoursePage" component={ManageCoursePage}/>
